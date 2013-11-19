@@ -1,0 +1,4 @@
+barbaricvimconfig
+=================
+
+Barbaric vim configuration
