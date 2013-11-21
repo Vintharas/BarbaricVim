@@ -7,3 +7,6 @@
 [submodule "bundle/clang-complete"]
 	path = bundle/clang-complete
 	url = git@github.com:Rip-Rip/clang_complete.git
+[submodule "bundle/vim-surround"]
+	path = bundle/vim-surround
+	url = git://github.com/tpope/vim-surround.git
