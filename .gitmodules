@@ -22,3 +22,6 @@
 [submodule "bundle/plasticboy-vim-markdown"]
 	path = bundle/plasticboy-vim-markdown
 	url = git@github.com:plasticboy/vim-markdown.git
+[submodule "bundle/vim-scripts-tcomment"]
+	path = bundle/vim-scripts-tcomment
+	url = git@github.com:vim-scripts/tComment.git
