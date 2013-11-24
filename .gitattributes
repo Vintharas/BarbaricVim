@@ -1,0 +1,2 @@
+# set default behavior, in case users don't have core.autocrlf set to true
+* text=auto
