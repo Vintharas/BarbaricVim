@@ -16,3 +16,6 @@
 [submodule "bundle/msanders-snipmate.vim"]
 	path = bundle/msanders-snipmate.vim
 	url = git://github.com/msanders/snipmate.vim.git
+[submodule "bundle/tpope-vim-ragtag"]
+	path = bundle/tpope-vim-ragtag
+	url = git@github.com:tpope/vim-ragtag.git
