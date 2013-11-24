@@ -19,3 +19,6 @@
 [submodule "bundle/tpope-vim-ragtag"]
 	path = bundle/tpope-vim-ragtag
 	url = git@github.com:tpope/vim-ragtag.git
+[submodule "bundle/plasticboy-vim-markdown"]
+	path = bundle/plasticboy-vim-markdown
+	url = git@github.com:plasticboy/vim-markdown.git
