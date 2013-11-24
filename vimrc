@@ -54,7 +54,7 @@ set autoread                      " Automatically re-read files changed outside 
 set clipboard=unnamed             " Use OS clipboard by default.
 
 " Colorschemes
-colorscheme distinguised
+colorscheme distinguished
 
 " Tab mappings.
 map <leader>tt :tabnew<cr>
