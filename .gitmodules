@@ -25,3 +25,6 @@
 [submodule "bundle/vim-scripts-tcomment"]
 	path = bundle/vim-scripts-tcomment
 	url = git@github.com:vim-scripts/tComment.git
+[submodule "bundle/airblade-vim-rooter"]
+	path = bundle/airblade-vim-rooter
+	url = git@github.com:airblade/vim-rooter.git
