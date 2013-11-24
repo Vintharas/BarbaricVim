@@ -28,3 +28,6 @@
 [submodule "bundle/airblade-vim-rooter"]
 	path = bundle/airblade-vim-rooter
 	url = git@github.com:airblade/vim-rooter.git
+[submodule "bundle/vim-scripts-taglist"]
+	path = bundle/vim-scripts-taglist
+	url = git@github.com:vim-scripts/taglist.vim.git
