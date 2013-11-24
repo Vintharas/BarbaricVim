@@ -31,3 +31,6 @@
 [submodule "bundle/vim-scripts-taglist"]
 	path = bundle/vim-scripts-taglist
 	url = git@github.com:vim-scripts/taglist.vim.git
+[submodule "bundle/tim-pope-unimpaired"]
+	path = bundle/tim-pope-unimpaired
+	url = git@github.com:tpope/vim-unimpaired.git
