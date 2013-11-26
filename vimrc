@@ -53,6 +53,8 @@ set autoread                      " Automatically re-read files changed outside 
 
 set clipboard=unnamed             " Use OS clipboard by default.
 
+set nofoldenable                  " disable folding
+
 " Colorschemes
 colorscheme distinguished
 
