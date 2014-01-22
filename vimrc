@@ -56,7 +56,10 @@ set clipboard=unnamed             " Use OS clipboard by default.
 set nofoldenable                  " disable folding
 
 " Colorschemes
-colorscheme distinguished
+set background=dark               " Dark background.
+colorscheme molokai
+let g:molokai_original = 1
+set guifont=Inconsolata:h16       " Decent font.
 
 " Tab mappings.
 map <leader>tt :tabnew<cr>
