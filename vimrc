@@ -36,8 +36,8 @@ set title                         " Set the terminal's title
 set visualbell                    " No beeping.
 
 " Global tabs/spaces settings
-set tabstop=2                     " Global tab width
-set shiftwidth=2                  " 
+set tabstop=4                     " Global tab width
+set shiftwidth=4                  " 
 set expandtab                     " Use spaces instead of tabs
 
 set laststatus=2                  " Always show a status line.
