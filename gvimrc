@@ -23,7 +23,7 @@ set lines=25 columns=100          " Window dimensions.
 set background=dark               " Dark background.
 colorscheme molokai
 let g:molokai_original = 1
-"set guifont=Inconsolata:h16       " Decent font.
+set guifont=Inconsolata:h16       " Decent font.
 
 highlight SPELLING guibg=blue     " Highlight likely typos.
 match SPELLING /toin/
