@@ -49,3 +49,6 @@
 [submodule "bundle/molokai"]
 	path = bundle/molokai
 	url = git@github.com:tomasr/molokai.git
+[submodule "bundle/vitality"]
+	path = bundle/vitality
+	url = https://github.com/sjl/vitality.vim.git
