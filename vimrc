@@ -1,10 +1,42 @@
-set nocompatible                  " Must come first because it changes other options.
+set nocompatible              " Must come first because it changes other options. (Vi improved)
+filetype off                  " required for Vundle
 
-" run pathogen package manager
-execute pathogen#infect()
+" **************************** Vundle Startup ******************************
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+" **************************************************************************
+
+" Let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" Install other plugins
+Plugin 'airblade/vim-rooter' " Changes Vim working directory to project root
+Plugin 'Lokaltog/vim-distinguished' " A dark vim color scheme for 256-color terminals.
+Plugin 'kien/ctrlp.vim' " Fuzzy file, buffer, mru, tag, etc finder
+Plugin 'tomasr/molokai' " Molokai theme for vim 
+Plugin 'msanders/snipmate.vim' " TextMate snippets feature in vim
+Plugin 'plasticboy/vim-markdown' " Markdown in vim
+Plugin 'scrooloose/nerdtree'  " A tree explorer plugin in vim
+Plugin 'tpope/vim-repeat' " Enable repeating supported plugin maps with .
+Plugin 'tpope/vim-unimpaired' " pairs of handy bracket mappings
+Plugin 'tpope/vim-ragtag' " ghetto HTML/XML mappings
+Plugin 'tpope/vim-fugitive' " a Git wrapper so awesome, it should be illegal
+" Plugin 'rip-rip/clang_complete' " Vim plugin that use clang for completing C/C++ code.
+" Plugin 'eraserhd/vim-ios' " ios plugin for vim
+Plugin 'vim-scripts/taglist.vim' " source code browser
+Plugin 'vim-scripts/tComment' " An extensible & universal comment plugin 
+Plugin 'tpope/vim-surround' " quoting/parenthesizing made simple
+Plugin 'sjl/vitality.vim' " vim plays nicely with iTerm and tmux
+Plugin 'wincent/Command-T' " fast file navigation for vim
+
+
+" ********************* Normal settings *************************
 
 syntax enable                     " enable syntax highlighting
-filetype plugin indent on         " Turn on file type detection.
+"filetype plugin indent on         " Turn on file type detection.
 
 runtime macros/matchit.vim        " Load the matchit plugin. (it extends the matching capabilities of the % operator
 
@@ -71,3 +103,24 @@ map <leader>tp :tabprevious<cr>
 map <leader>tf :tabfirst<cr>
 map <leader>tl :tablast<cr>
 map <leader>tm :tabmove
+
+" Make sure that movements work as expected in wrapped lines
+function! ScreenMovement(movement)
+    if &wrap
+        return "g" . a:movement
+    else
+        return a:movement
+    endif
+endfunction
+
+onoremap <silent> <expr> j ScreenMovement("j")
+onoremap <silent> <expr> k ScreenMovement("k")
+onoremap <silent> <expr> 0 ScreenMovement("0")
+onoremap <silent> <expr> ^ ScreenMovement("^")
+onoremap <silent> <expr> $ ScreenMovement("$")
+nnoremap <silent> <expr> j ScreenMovement("j")
+nnoremap <silent> <expr> k ScreenMovement("k")
+nnoremap <silent> <expr> 0 ScreenMovement("0")
+nnoremap <silent> <expr> ^ ScreenMovement("^")
+nnoremap <silent> <expr> $ ScreenMovement("$")
+
