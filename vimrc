@@ -31,6 +31,8 @@ Plugin 'vim-scripts/tComment' " An extensible & universal comment plugin
 Plugin 'tpope/vim-surround' " quoting/parenthesizing made simple
 Plugin 'sjl/vitality.vim' " vim plays nicely with iTerm and tmux
 Plugin 'wincent/Command-T' " fast file navigation for vim
+Plugin 'junegunn/limelight.vim' " focus on what you are writing right now
+Plugin 'junegunn/goyo.vim' " distraction free mode
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
