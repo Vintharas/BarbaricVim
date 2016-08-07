@@ -33,6 +33,7 @@ Plugin 'sjl/vitality.vim' " vim plays nicely with iTerm and tmux
 Plugin 'wincent/Command-T' " fast file navigation for vim
 Plugin 'junegunn/limelight.vim' " focus on what you are writing right now
 Plugin 'junegunn/goyo.vim' " distraction free mode
+Plugin 'Townk/vim-autoclose' " Autoclose parens and stuff
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -120,6 +121,9 @@ map <leader>tf :tabfirst<cr>
 map <leader>tl :tablast<cr>
 map <leader>tm :tabmove
 
+" ReSharper Mappings
+map <C-,> <C-^>
+
 " Make sure that movements work as expected in wrapped lines
 function! ScreenMovement(movement)
     if &wrap
@@ -139,4 +143,5 @@ nnoremap <silent> <expr> k ScreenMovement("k")
 nnoremap <silent> <expr> 0 ScreenMovement("0")
 nnoremap <silent> <expr> ^ ScreenMovement("^")
 nnoremap <silent> <expr> $ ScreenMovement("$")
+
 
