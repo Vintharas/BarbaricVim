@@ -34,6 +34,8 @@ Plugin 'wincent/Command-T' " fast file navigation for vim
 Plugin 'junegunn/limelight.vim' " focus on what you are writing right now
 Plugin 'junegunn/goyo.vim' " distraction free mode
 Plugin 'Townk/vim-autoclose' " Autoclose parens and stuff
+Plugin 'alvan/vim-closetag' " Authoclose html tags
+Plugin 'edsono/vim-matchit' " Match HTML tags with %
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -143,5 +145,10 @@ nnoremap <silent> <expr> k ScreenMovement("k")
 nnoremap <silent> <expr> 0 ScreenMovement("0")
 nnoremap <silent> <expr> ^ ScreenMovement("^")
 nnoremap <silent> <expr> $ ScreenMovement("$")
+
+" CLOSE TAG CONFIGURATION
+" filenames like *.xml, *.html, *.xhtml, ...
+let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.js,*.jsx"
+
 
 
